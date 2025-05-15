@@ -1,0 +1,70 @@
+
+Aprendiendo a usar Python
+
+# Instalar Conda, Python y JupyterLab
+# Desde la página de ANACONDA descargar el Miniconda Installer Python v. 3.12 para Windows: https://www.anaconda.com/download/success#miniconda
+# Ejecutar el instalador correspondiente
+# Verificar su funcionamiento:
+> conda env list
+
+# Desde la terminal Anaconda PowerShell Promt crear el entorno de conda para JupyterLab:
+> conda create --yes -n jupyterlab -c conda-forge python=3.12 jupyter jupyterlab-language-pack-es-ES nb_conda_kernels matplotlib pandas netcdf4
+# Se incluyó el paquete Python 3.12, y tres paquetes de este programa, matplotlib, pandas y netcdf4; el ambiente se desarrollará en lenguaje español con el comando jupyterlab-language-pack-es-ES
+
+# Activar el entorno JypiterLab:
+> conda activate jupyterlab
+
+# Los entornos se desactivan con: conda deactivate
+
+# Nota: Se puede crear un entorno básico de Python con: conda create --yes -n python -c conda-forge python=3.12
+# A partir de este entorno básico se pueden instalar paquetes, preferentemente desde el repositorio conda-forge, por ejemplo: conda install -c conda-forge seaborn (Esta es una biblioteca que provee alternativas para realizar gráficas estadísticas).
+
+# Nota: en Jupyter notebook cada celda puede tener solo texto o ser un código para escribir Python
+
+
+# Probando Python
+# Python puede funcionar como una calculadora (se realiza primero la multiplicación (*) y división (/), después la suma (+) y resta (-):
+
+6 + 8 / 2
+10.0
+
+# Una variable puede tener letras, digitos y “_”. No puede empezar con un número y los nombres son sensible a mayúsculas y minúsculas; peso0 es válida pero no 0peso
+
+# Asignar valores a una variable
+Peso = 60
+peso_kg = 60.3
+
+# Asignar dos variables al mismo tiempo
+a, b, = 2, 3
+print(a)
+print(b)
+
+2
+3
+
+# Python distingue varios tipos de datos. Integer (Enteros) Float (Decimales) String (Texto). También se pueden llamar a funciones dentro de funciones
+
+# En Python las comillas definen a una variable como texto (String)
+paciente_id = “001” 
+paciente_id
+“001”
+
+peso_lb = 2.2 * peso_kg
+print(peso_lb)
+
+132.66
+
+print(paciente_id, 'peso en kilogramos:', peso_kg)
+001 peso en kilogramos: 60.3
+
+# Nota: Phyton empieza a contar desde cero (no desde 1)
+mi_nombre = “Pablo Hernández”
+print(mi_nombre)
+Pablo Hernández
+
+print(mi_nombre[1])
+a
+Print(mi_nombre[0]
+p)
+
+
